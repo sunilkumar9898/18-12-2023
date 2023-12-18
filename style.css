@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    color: white;
+}
+nav{
+    display:contents;
+    justify-content: space-between;
+}
+nav div ul{
+   display: flex;
+   background-color: gray;
+    justify-content: space-around; 
+}
+ul li{
+    padding: 15px 20px;
+}
+ul li:hover{
+    background-color: rgb(99, 89, 89);
+}
+.logo ,.toggle{
+    display: none;
+}
+.logo img{
+    width: 10%;
+    border-radius: 8px;
+}
+.Student_details{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 50px 0px;
+    align-items: center;
+}
+.Student_details div img{
+    width: 550px;
+    height: auto;
+    border-radius: 9px;
+}
+form {
+    width: 600px;
+    max-width: 800px;
+    /* width:200%; */
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+
+footer ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+@media screen and (min-width:200px) and (max-width:420px) {
+    nav div>ul{
+        display: none;
+    }
+    nav{
+        display: flex;
+        background-color: gray;
+        align-items: center;
+        padding: 10px;   
+    }
+   .logo ,.toggle{
+        display: flex;
+        justify-content: space-between;
+    }
+    .toggle{
+        font-size: 24px;
+        color: white;
+    }
+    nav div ul{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        transition: display 0.3s ease; 
+    }
+}
